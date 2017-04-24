@@ -232,7 +232,10 @@ var res =[
 ];
 
 res.forEach(function(element){
-return "<b>Post #" + element.name + " : <br>" + element.address + "</b><br>" )
+document.write("<div><p> Nombre : <b>" +  element.name + "</b><br>" + element.address.street + " " + element.address.suite + " , " + element.address.city + "</p></div>" )
+document.write("<div><p> Compañía : " +  element.company.name + "<br>" + element.address.street + " " + element.address.suite + "</p></div><br>" )
+
 })
+
 
 
